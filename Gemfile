@@ -48,11 +48,12 @@ end
 group :test, :development do
   gem 'pry-rails'
   gem 'factory_girl_rails'
-  gem 'shoulda'
+  gem 'shoulda-matchers'
   gem 'valid_attribute'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'dotenv'
+  gem 'launchy'
 end
 
 group :test do
