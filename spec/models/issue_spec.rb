@@ -3,6 +3,8 @@ require 'spec_helper'
 describe Issue do
   it { should_not have_valid(:severity).when(nil) }
 
+  it { should belong_to :category }
+  
   describe '.categories' do
     it 'includes Bug' do
       expect(Issue.categories).to include('Bug')
